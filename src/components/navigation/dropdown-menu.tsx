@@ -9,7 +9,7 @@ const DropdownMenu = () => {
   return (
     <Menu as="div" className="relative inline-block">
       <div>
-        <MenuButton className="w-full justify-center rounded-md px-3 py-1 font-semibold hover:text-yellow-300">
+        <MenuButton className="w-full justify-center rounded-md px-3 py-1 font-semibold transition-all duration-200 hover:scale-110">
           <GiHamburgerMenu
             className="hover:text-stone-800"
             size={24}
