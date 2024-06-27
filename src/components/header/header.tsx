@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({
   className,
 }) => {
   return (
-    <header className="relative h-full w-full">
+    <header className="relative w-full">
       <img
         src={bgImage}
         alt="kt wiz"
