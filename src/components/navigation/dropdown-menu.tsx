@@ -3,7 +3,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import { classNames } from '../../utils/className';
+import { classNames } from '../../utils/classNames';
 
 const DropdownMenu = () => {
   return (
