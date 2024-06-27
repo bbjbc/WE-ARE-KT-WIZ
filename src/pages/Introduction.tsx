@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import Header from '../components/header/header';
 import ktIntroImg from '../assets/ktIntroImg.png';
 import ktHeaderImg from '../assets/ktHeaderImg.png';
@@ -15,7 +17,13 @@ const IntroductionPage = () => {
       />
       <main>
         <ContentLayout>
-          <img src={ktIntroImg} alt="kt wiz" className="w-full rounded-xl" />
+          <motion.article
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >
+            <img src={ktIntroImg} alt="kt wiz" className="w-full rounded-xl" />
+          </motion.article>
           <IntroductionContent />
         </ContentLayout>
       </main>
