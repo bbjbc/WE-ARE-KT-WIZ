@@ -1,5 +1,9 @@
 const HomePage = () => {
-  return <h1 className="flex justify-center text-lg">Kt Wiz 마법은 영원히</h1>;
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
 };
 
 export default HomePage;
