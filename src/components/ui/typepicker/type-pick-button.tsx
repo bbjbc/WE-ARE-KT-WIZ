@@ -25,7 +25,7 @@ const TypePickButton = () => {
           투수
         </NavLink>
         <NavLink
-          to="/players/catcher"
+          to="/players/batter"
           className={({ isActive }) =>
             isActive
               ? 'rounded-md bg-white py-1 text-center font-semibold text-black shadow-md'

@@ -6,5 +6,5 @@ export const BreadcrumbItems = [
   { label: '경기 예매 방법', link: '/tickets' },
   { label: '코칭스텝', link: '/players/coach' },
   { label: '투수', link: '/players/pitcher' },
-  { label: '타자', link: '/players/catcher' },
+  { label: '타자', link: '/players/batter' },
 ];
