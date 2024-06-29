@@ -1,7 +1,18 @@
+import { Outlet, useLocation } from 'react-router-dom';
+
 import PlayerGrid from '../components/player/player-grid';
 
 const BatterPage = () => {
-  return <PlayerGrid category="타자" />;
+  const location = useLocation();
+
+  return (
+    <>
+      {location.pathname === '/players/batter' && (
+        <PlayerGrid category="타자" />
+      )}
+      <Outlet />
+    </>
+  );
 };
 
 export default BatterPage;
