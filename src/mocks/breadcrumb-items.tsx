@@ -7,4 +7,7 @@ export const BreadcrumbItems = [
   { label: '코칭스텝', link: '/players/coach' },
   { label: '투수', link: '/players/pitcher' },
   { label: '타자', link: '/players/batter' },
+  { label: '포수', link: '/players/batter/catcher' },
+  { label: '내야수', link: '/players/batter/infielder' },
+  { label: '외야수', link: '/players/batter/outfielder' },
 ];
