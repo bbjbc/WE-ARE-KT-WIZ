@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Accordion from '../ui/accordion/accordion';
+import PlayerDetailInfo from './player-detail-info';
 
 interface Player {
   id: string;
@@ -63,41 +64,35 @@ const PlayerItem: React.FC<PlayerItemProps> = ({ player }) => {
 
       {/* 아코디언 펼치면 나타나는 세부정보 */}
       <Accordion isOpen={isOpen}>
-        <div className="mt-4">
-          <p className="flex flex-col">
-            포지션
-            <span className="text-sm text-gray-700">{player.position}</span>
-          </p>
-          <p className="flex flex-col">
-            생년월일
-            <span className="text-sm text-gray-700">{player.birth}</span>
-          </p>
-          <p className="flex flex-col">
-            체격
-            <span className="text-sm text-gray-700">
-              {player.height}cm - {player.weight}kg
-            </span>
-          </p>
-          {(player.elementarySchool ||
-            player.middleSchool ||
-            player.highSchool ||
-            player.university ||
-            player.professional) && (
-            <p className="flex flex-col">
-              출신교
-              <span className="text-sm text-gray-700">
-                {[
-                  player.elementarySchool,
-                  player.middleSchool,
-                  player.highSchool,
-                  player.university,
-                  player.professional,
-                ]
-                  .filter(Boolean)
-                  .join('-')}
-              </span>
-            </p>
-          )}
+        <div className="mt-4 rounded-lg border-2 border-zinc-300 bg-white p-4">
+          <div className="grid grid-cols-2">
+            <PlayerDetailInfo title="포지션" content={player.position} />
+            <PlayerDetailInfo title="생년월일" content={player.birth} />
+            <PlayerDetailInfo
+              title="체격"
+              content={`${player.height}cm - ${player.weight}kg`}
+            />
+            <PlayerDetailInfo
+              title="출신교"
+              content={
+                player.elementarySchool ||
+                player.middleSchool ||
+                player.highSchool ||
+                player.university ||
+                player.professional
+                  ? [
+                      player.elementarySchool,
+                      player.middleSchool,
+                      player.highSchool,
+                      player.university,
+                      player.professional,
+                    ]
+                      .filter(Boolean)
+                      .join(' - ')
+                  : '정보가 없습니다'
+              }
+            />
+          </div>
         </div>
       </Accordion>
     </section>
