@@ -10,6 +10,9 @@ import CheerSquadPage from '../pages/CheerSquad';
 import CoachPage from '../pages/Coach';
 import PitcherPage from '../pages/Pitcher';
 import BatterPage from '../pages/Batter';
+import CatcherPage from '../pages/Catcher';
+import InfielderPage from '../pages/Infielder';
+import OutfielderPage from '../pages/Outfielder';
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -26,7 +29,21 @@ const Router = () => {
           children: [
             { path: '/players/coach', element: <CoachPage /> },
             { path: '/players/pitcher', element: <PitcherPage /> },
-            { path: '/players/batter', element: <BatterPage /> },
+            {
+              path: '/players/batter',
+              element: <BatterPage />,
+              children: [
+                { path: '/players/batter/catcher', element: <CatcherPage /> },
+                {
+                  path: '/players/batter/infielder',
+                  element: <InfielderPage />,
+                },
+                {
+                  path: '/players/batter/outfielder',
+                  element: <OutfielderPage />,
+                },
+              ],
+            },
           ],
         },
       ],
