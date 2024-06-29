@@ -1,9 +1,7 @@
+import PlayerGrid from '../components/player/player-grid';
+
 const BatterPage = () => {
-  return (
-    <div>
-      <h1>BatterPage</h1>
-    </div>
-  );
+  return <PlayerGrid category="타자" />;
 };
 
 export default BatterPage;

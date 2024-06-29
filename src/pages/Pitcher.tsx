@@ -1,9 +1,7 @@
+import PlayerGrid from '../components/player/player-grid';
+
 const PitcherPage = () => {
-  return (
-    <div>
-      <h1>PitcherPage</h1>
-    </div>
-  );
+  return <PlayerGrid category="투수" />;
 };
 
 export default PitcherPage;

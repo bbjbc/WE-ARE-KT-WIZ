@@ -1,9 +1,7 @@
+import PlayerGrid from '../components/player/player-grid';
+
 const CoachPage = () => {
-  return (
-    <div>
-      <h1>CoachPage</h1>
-    </div>
-  );
+  return <PlayerGrid category="코칭스텝" />;
 };
 
 export default CoachPage;
