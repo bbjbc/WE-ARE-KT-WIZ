@@ -18,7 +18,7 @@ interface Player {
   university?: string;
   professional?: string;
   category: string;
-  category_detail: string;
+  category_detail?: string;
 }
 
 interface PlayerItemProps {

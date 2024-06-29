@@ -5,16 +5,23 @@ import { PlayerInfo } from '../../mocks/player-info';
 
 interface PlayerGridProps {
   category: string;
+  category_detail?: string;
 }
 
-const PlayerGrid: React.FC<PlayerGridProps> = ({ category }) => {
+const PlayerGrid: React.FC<PlayerGridProps> = ({
+  category,
+  category_detail,
+}) => {
   const filteredPlayers = PlayerInfo.filter(
-    (player) => player.category === category,
+    (player) =>
+      player.category === category &&
+      (!category_detail || player.category_detail === category_detail),
   );
 
   const countCategoryPlayer = filteredPlayers.length;
-
-  const josaCategory = josa(category, '와/과');
+  const josaCategory = category_detail
+    ? josa(category_detail, '와/과')
+    : josa(category, '와/과');
 
   return (
     <>
