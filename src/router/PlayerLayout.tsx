@@ -1,7 +1,7 @@
 import Header from '../components/header/header';
 import ContentLayout from '../components/content/content-layout';
 import ktHeaderImg from '../assets/ktHeaderImg.png';
-import TypePickButton from '../components/ui/typepicker/type-pick-button';
+import PlayerCategory from '../components/player/player-category';
 
 interface PlayerLayoutProps {
   children?: React.ReactNode;
@@ -17,7 +17,7 @@ const PlayerLayout: React.FC<PlayerLayoutProps> = ({ children }) => {
       />
       <main>
         <ContentLayout>
-          <TypePickButton />
+          <PlayerCategory />
           {children}
         </ContentLayout>
       </main>
