@@ -1,7 +1,9 @@
+import { useAtom } from 'jotai';
 import { josa } from 'es-hangul';
 
 import PlayerItem from './player-item';
 import { PlayerInfo } from '../../mocks/player-info';
+import { searchTermAtom } from '../../utils/atoms';
 
 interface PlayerGridProps {
   category: string;
@@ -12,10 +14,13 @@ const PlayerGrid: React.FC<PlayerGridProps> = ({
   category,
   category_detail,
 }) => {
+  const [searchTerm] = useAtom(searchTermAtom);
+
   const filteredPlayers = PlayerInfo.filter(
     (player) =>
       player.category === category &&
-      (!category_detail || player.category_detail === category_detail),
+      (!category_detail || player.category_detail === category_detail) &&
+      player.name.includes(searchTerm),
   );
 
   const countCategoryPlayer = filteredPlayers.length;
