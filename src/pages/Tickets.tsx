@@ -4,6 +4,7 @@ import ktHeaderImg from '../assets/ktHeaderImg.png';
 import ReservationWay from '../components/tickets/reservation-way';
 import Reservation from '../components/tickets/reservation';
 import SeatGuide from '../components/tickets/seat-guide';
+import Discount from '../components/tickets/discount';
 
 const TicketsPage = () => {
   return (
@@ -19,6 +20,7 @@ const TicketsPage = () => {
             <ReservationWay />
             <Reservation />
             <SeatGuide />
+            <Discount />
           </section>
         </ContentLayout>
       </main>
