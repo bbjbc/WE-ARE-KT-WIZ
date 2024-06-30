@@ -28,10 +28,17 @@ const PlayerGrid: React.FC<PlayerGridProps> = ({
     ? josa(category_detail, '와/과')
     : josa(category, '와/과');
 
+  const searchResultMessage =
+    countCategoryPlayer === 0
+      ? '검색 결과가 없습니다.'
+      : `당신이 검색한 선수는 총 ${countCategoryPlayer}명입니다.`;
+
   return (
     <>
       <h2 className="mb-2 flex justify-center text-sm font-medium">
-        kt wiz는 총 {countCategoryPlayer}명의 {josaCategory} 함께합니다!
+        {searchTerm
+          ? searchResultMessage
+          : `kt wiz는 총 ${countCategoryPlayer}명의 ${josaCategory} 함께합니다!`}
       </h2>
       <ul className="mb-10 flex flex-col gap-6">
         {filteredPlayers.map((player) => (
