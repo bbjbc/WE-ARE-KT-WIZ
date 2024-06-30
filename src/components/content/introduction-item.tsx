@@ -37,7 +37,7 @@ const IntroductionItem: React.FC<IntroductionItemProps> = ({
     >
       <h1 className="text-lg font-extrabold text-red-700">{title}</h1>
       <div className="w-1/6 border-t-4 border-red-500"></div>
-      <p>{children}</p>
+      <div>{children}</div>
       {imgSrc && (
         <img src={imgSrc} alt="kt wiz" className="w-full rounded-xl" />
       )}
