@@ -14,7 +14,7 @@ const CheerSquadPage = () => {
       />
       <main>
         <ContentLayout>
-          <PlayerSearch />
+          <PlayerSearch placeholder="응원단원을 검색해보세요!" />
           <CheerSquadGrid />
         </ContentLayout>
       </main>

@@ -23,7 +23,9 @@ const PlayerLayout: React.FC<PlayerLayoutProps> = ({ children }) => {
       <main>
         <ContentLayout>
           <PlayerCategory />
-          {location.pathname !== '/players' && <PlayerSearch />}
+          {location.pathname !== '/players' && (
+            <PlayerSearch placeholder="선수 이름을 검색해보세요!" />
+          )}
           {children}
         </ContentLayout>
       </main>
