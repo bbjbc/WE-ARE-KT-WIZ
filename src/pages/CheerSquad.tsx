@@ -2,6 +2,7 @@ import ContentLayout from '../components/content/content-layout';
 import ktHeaderImg from '../assets/ktHeaderImg.png';
 import Header from '../components/header/header';
 import CheerSquadGrid from '../components/cheer/cheer-squad-grid';
+import PlayerSearch from '../components/player/player-search';
 
 const CheerSquadPage = () => {
   return (
@@ -13,6 +14,7 @@ const CheerSquadPage = () => {
       />
       <main>
         <ContentLayout>
+          <PlayerSearch />
           <CheerSquadGrid />
         </ContentLayout>
       </main>
