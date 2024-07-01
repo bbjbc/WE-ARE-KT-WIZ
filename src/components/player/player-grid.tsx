@@ -1,4 +1,4 @@
-import { useAtom } from 'jotai';
+import { useAtomValue } from 'jotai';
 import { josa } from 'es-hangul';
 
 import PlayerItem from './player-item';
@@ -14,7 +14,7 @@ const PlayerGrid: React.FC<PlayerGridProps> = ({
   category,
   category_detail,
 }) => {
-  const [searchTerm] = useAtom(searchTermAtom);
+  const searchTerm = useAtomValue(searchTermAtom);
 
   const filteredPlayers = PlayerInfo.filter(
     (player) =>
@@ -35,7 +35,7 @@ const PlayerGrid: React.FC<PlayerGridProps> = ({
 
   return (
     <>
-      <h2 className="mb-2 flex justify-center text-sm font-medium">
+      <h2 className="mb-2 flex justify-center text-sm">
         {searchTerm
           ? searchResultMessage
           : `kt wiz는 총 ${countCategoryPlayer}명의 ${josaCategory} 함께합니다!`}
