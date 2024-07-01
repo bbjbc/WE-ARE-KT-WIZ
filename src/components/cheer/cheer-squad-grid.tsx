@@ -1,3 +1,4 @@
+import { chosungIncludes } from 'es-hangul';
 import { useAtomValue } from 'jotai';
 
 import CheerSquadItem from './cheer-squad-item';
@@ -7,8 +8,10 @@ import { searchTermAtom } from '../../utils/atoms';
 const CheerSquadGrid = () => {
   const searchTerm = useAtomValue(searchTermAtom);
 
-  const filteredCheerSquad = CheerSquadInfo.filter((cheerSquad) =>
-    cheerSquad.name.includes(searchTerm),
+  const filteredCheerSquad = CheerSquadInfo.filter(
+    (cheerSquad) =>
+      cheerSquad.name.includes(searchTerm) ||
+      chosungIncludes(cheerSquad.name, searchTerm),
   );
   const countCheerSquad = filteredCheerSquad.length;
   const searchResultMessage =
