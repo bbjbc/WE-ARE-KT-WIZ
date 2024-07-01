@@ -6,6 +6,7 @@
   font-family:
     'GmarketSansMedium',
     'GmarketSansBold',
+    'GongGothicMedium',
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -26,5 +27,13 @@
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
     format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff')
+    format('woff');
+  font-weight: bold;
   font-style: normal;
 }

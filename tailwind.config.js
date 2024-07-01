@@ -2,7 +2,11 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gonggothic: ['GongGothicMedium', 'GmarketSansMedium'],
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar-hide')],
 };
