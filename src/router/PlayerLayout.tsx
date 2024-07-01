@@ -1,3 +1,5 @@
+import { useLocation } from 'react-router-dom';
+
 import Header from '../components/header/header';
 import ContentLayout from '../components/content/content-layout';
 import ktHeaderImg from '../assets/ktHeaderImg.png';
@@ -9,6 +11,8 @@ interface PlayerLayoutProps {
 }
 
 const PlayerLayout: React.FC<PlayerLayoutProps> = ({ children }) => {
+  const location = useLocation();
+
   return (
     <>
       <Header
@@ -19,7 +23,7 @@ const PlayerLayout: React.FC<PlayerLayoutProps> = ({ children }) => {
       <main>
         <ContentLayout>
           <PlayerCategory />
-          <PlayerSearch />
+          {location.pathname !== '/players' && <PlayerSearch />}
           {children}
         </ContentLayout>
       </main>
