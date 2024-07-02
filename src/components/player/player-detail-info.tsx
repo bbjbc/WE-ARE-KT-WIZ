@@ -9,8 +9,8 @@ const PlayerDetailInfo: React.FC<PlayerDetailInfoProps> = ({
 }) => {
   return (
     <article className="mb-2 flex flex-col">
-      <h1 className="font-semibold text-gray-900">{title}</h1>
-      <p className="text-sm text-gray-600">{content}</p>
+      <h1 className="text-sm font-semibold text-gray-900">{title}</h1>
+      <p className="text-xs text-gray-600">{content}</p>
     </article>
   );
 };
