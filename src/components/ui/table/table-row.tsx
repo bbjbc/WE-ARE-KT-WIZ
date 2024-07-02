@@ -1,6 +1,6 @@
 interface TableRowProps {
   tableHeader: string;
-  details: React.ReactNode;
+  details: string | JSX.Element;
 }
 
 const TableRow: React.FC<TableRowProps> = ({ tableHeader, details }) => {

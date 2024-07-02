@@ -1,7 +1,7 @@
 import TableRow from './table-row';
 
 interface TableProps {
-  data: Array<{ tableHeader: string; details: string }>;
+  data: Array<{ tableHeader: string; details: string | JSX.Element }>;
   caption?: string;
   tHeadFirstTitle: string;
   tHeadSecondTitle: string;
