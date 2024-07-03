@@ -1,5 +1,5 @@
 import AccordionItem from '../ui/accordion/accordion-item';
-
+import AudioPlayer from '../ui/audio/audio-player';
 import { FaItunesNote } from 'react-icons/fa6';
 
 interface SongItemProps {
@@ -44,9 +44,7 @@ const SongItem: React.FC<SongItemProps> = ({
     <div className="flex flex-col justify-center text-left">
       <span>{playerName} 응원가 가사</span>
       <p className="my-2 text-xs">{formattedLyrics}</p>
-      <audio controls className="w-full">
-        <source src={songUrl} type="audio/mp3" />
-      </audio>
+      <AudioPlayer src={songUrl} />
     </div>
   );
 
