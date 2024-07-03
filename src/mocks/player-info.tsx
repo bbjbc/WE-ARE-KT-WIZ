@@ -1,5 +1,5 @@
 // 코칭스텝
-// import coach1 from '../assets/coach/이강철.jpg';
+import coach1 from '../assets/coach/이강철.jpg';
 import coach2 from '../assets/coach/김태한.jpg';
 import coach3 from '../assets/coach/김태균.jpg';
 import coach4 from '../assets/coach/제춘모.jpg';
@@ -98,8 +98,7 @@ export const PlayerInfo = [
     weight: '78',
     highSchool: '광주제일고',
     university: '동국대',
-    image:
-      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%B0%90%EC%97%AC%EA%B6%8C.jpg',
+    image: coach1,
   },
   {
     id: '2',
@@ -854,6 +853,17 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%ED%98%84%EC%9A%B01.mp3',
     ],
+    lyrics: [
+      `
+        케이티위즈 승리위해 강현우
+        워어어 워어어어
+        케이티위즈 안방마님 강현우
+        워어어 워어어어
+
+        케이티위즈 승리위해 강현우
+        워어어 워어어어
+    `,
+    ],
   },
   {
     id: '54',
@@ -890,6 +900,25 @@ export const PlayerInfo = [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%A4%80%ED%83%9C1.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%A4%80%ED%83%9C2.mp3',
     ],
+    lyrics: [
+      `
+        KT의 김준태 안타
+        KT의 김준태 워~
+        KT 승리위해 김준태 날려버려 (반복 3번)
+        안! 타! 김준태!
+      `,
+      `
+        워어어워어어 안타 김준태
+        워어어 안타 김준태
+        kt 승리를 위해
+        날려라 안 타 김준태
+
+        워어어워어어 안타 김준태
+        워어어 안타 김준태
+        kt 승 리 위해
+        안 타 날려라 김준태 (김준태)
+      `,
+    ],
   },
   {
     id: '56',
@@ -908,6 +937,15 @@ export const PlayerInfo = [
     image: batter4,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9E%A5%EC%84%B1%EC%9A%B01.mp3',
+    ],
+    lyrics: [
+      `
+        kt의 장성우~ 워~
+        kt의 장성우~ 워~
+        kt의 장성우~ 워~
+        승리를 위하여 (반복 2번)
+        장! 성! 우!
+      `,
     ],
   },
   {
@@ -963,6 +1001,24 @@ export const PlayerInfo = [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%EB%B0%B1%ED%98%B82.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%EB%B0%B1%ED%98%B83.mp3',
     ],
+    lyrics: [
+      `
+        kt wiz 강백호 (호~)
+        kt wiz 강백호
+        승리를 (호~)
+        위하여 (호~)
+        k t wiz 강 백 호
+      `,
+      `
+        강백호 워우워어우워어
+        강백호 워우워어 홈런! (반복 4번)
+      `,
+      `
+        KT 강백호 안타를 친다~ 
+        홈런을 친다 승리를 위해~
+        난 나나나 난 나나 나나난 난나 나나난 난나 나나난 난나 (반복 2번)
+      `,
+    ],
   },
   {
     id: '60',
@@ -981,6 +1037,13 @@ export const PlayerInfo = [
     image: batter8,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%83%81%EC%88%981.mp3',
+    ],
+    lyrics: [
+      `
+        날려버려 김상수 야야야야야
+        안타안타 김상수 야야야야야 (반복 2번)
+        (리듬) ~~~~ 헤이! x4
+      `,
     ],
   },
   {
@@ -1001,6 +1064,25 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EA%B2%BD%EC%88%981.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EA%B2%BD%EC%88%982.mp3',
+    ],
+    lyrics: [
+      `
+        박경수 you're my sunshine We were together
+        KT wiz의 승리 위해 캡틴 박경수
+        박경수 you're my sunshine We were together
+        KT wiz의 승리를 위해~
+      `,
+      `
+        아~~우~~~
+        날려버려 박경수 (예~~~)
+        아~~~~우~~~
+        라잇나우 (박.경.수)
+
+        아~~우~~~
+        나타날게 내가 필요할 땐
+        아무도 나를 막지못해
+        내가 바로 kt 박경수 (예~~~)
+      `,
     ],
   },
   {
@@ -1037,6 +1119,15 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%8B%A0%EB%B3%B8%EA%B8%B01.mp3',
     ],
+    lyrics: [
+      `
+        kt wiz 신본기 kt wiz 승리 위하여
+        kt wiz 신본기 파이팅
+        kt wiz 신본기 안타 kt wiz 승리 위하여
+        kt wiz 신본기 파이팅 
+        신! 본! 기!
+      `,
+    ],
   },
   {
     id: '64',
@@ -1056,6 +1147,14 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9C%A4%EC%84%9D1.mp3',
     ],
+    lyrics: [
+      `
+        오! 오! 오윤석~
+        kt wiz 오윤석~ 
+        날려버려 안타안타안타 
+        kt wiz 오윤석 (안타) (반복 2번)
+      `,
+    ],
   },
   {
     id: '65',
@@ -1074,6 +1173,24 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9E%AC%EC%9D%BC1.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9E%AC%EC%9D%BC2.mp3',
+    ],
+    lyrics: [
+      `
+        오~ 재일 KT 오~재일
+        오~ 재일 KT 오~재일
+
+        KT 오재일 (안타)
+        오오오 오재일 (홈런)
+        KT 오재일 (파이팅)
+        오오오오 오재일 (반복 2번)
+        (오 재 일)
+      `,
+      `
+        오오오오오오오오오
+        KT 오재일 안타
+        오오오오오오오오오
+        KT 오재일 홈런 (2번 반복)
+      `,
     ],
   },
   {
@@ -1109,6 +1226,15 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9D%B4%ED%98%B8%EC%97%B01.mp3',
     ],
+    lyrics: [
+      `
+        워어어 오어어어
+        이호연 안타 워어~
+        이호연 안타 KT 이호연
+        안타를 날려버려 (2번 반복)
+        (이 호 연)
+      `,
+    ],
   },
   {
     id: '68',
@@ -1126,6 +1252,13 @@ export const PlayerInfo = [
     image: batter16,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9E%A5%EC%A4%80%EC%9B%901.mp3',
+    ],
+    lyrics: [
+      `
+        장준원 오오오 장준원
+        장준원 오오오 KT 승리를 위해
+        안타를 날려라 장준원 (반복 2번)
+      `,
     ],
   },
   {
@@ -1146,6 +1279,14 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%B2%9C%EC%84%B1%ED%98%B81.mp3',
     ],
+    lyrics: [
+      `
+        안타를 날려버려 천성호 워어어
+        홈런을 날려버려 천성호
+        워어어 케이티위즈 승리위해
+        천성호 안타 워어~ (반복 2번)
+      `,
+    ],
   },
   {
     id: '70',
@@ -1165,6 +1306,32 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%A9%EC%9E%AC%EA%B7%A01.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%A9%EC%9E%AC%EA%B7%A02.mp3',
+    ],
+    lyrics: [
+      `
+        황~재균 황재균
+        kt wiz의 황재균
+        워어! 승리를 위하여
+        날 려 버 려 황 재 균
+
+        황~재균 황재균
+        kt wiz의 황재균
+        워어~
+        안타! 홈런! 날려 버려
+        kt 황재균~ (황 재 균)
+      `,
+      `
+        가자~ 빵야! 빵야! 빵야! 빵야!
+        kt황재균
+        kt황재균
+        Let's go 승리를 향해
+        빵야! 빵야! 빵야! 빵야!
+
+        KT황재균
+        KT황재균
+        Let's go 승리를향해
+        빵야! 빵야! 빵야! 빵야!
+      `,
     ],
   },
   // 타자 - 외야수
@@ -1200,6 +1367,21 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EB%AF%BC%ED%98%811.mp3',
     ],
+    lyrics: [
+      `
+        kt wiz 김민혁
+        날려버려 김민혁
+        We can come together
+        We can come together
+
+        kt wiz 김민혁
+        날려버려 김민혁
+        We can come together
+        We can come together
+
+        김민혁!
+      `,
+    ],
   },
   {
     id: '73',
@@ -1233,6 +1415,18 @@ export const PlayerInfo = [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%A1%9C%ED%95%98%EC%8A%A41.mp3',
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%A1%9C%ED%95%98%EC%8A%A42.mp3',
     ],
+    lyrics: [
+      `
+        오! 로 하스 오! 로하스 오! 로 하스
+        kt wiz 로하스! (반복 2번)
+      `,
+      `
+        KT의 로하스 (와우) KT의 로하스 워어
+        KT의 로하스 (와우) KT의 로하스 워어
+        KT 로하스 파이팅 KT 로하스 파이팅
+        KT의 로하스 워어어어~ (로 하 스)
+      `,
+    ],
   },
   {
     id: '75',
@@ -1251,6 +1445,14 @@ export const PlayerInfo = [
     image: batter23,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%AC%B8%EC%83%81%EC%B2%A01.mp3',
+    ],
+    lyrics: [
+      `
+        KT 문상철 워우워어어어어
+        KT 문상철 워우워어어어어
+        KT 문상철 워우워어어어어
+        신 나게 외쳐봅시다 (반복 2번)
+      `,
     ],
   },
   {
@@ -1271,6 +1473,15 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%B0%EC%A0%95%EB%8C%801.mp3',
     ],
+    lyrics: [
+      `
+        KT 배정대 나나나 난~나나
+        KT 배정대 나나나 난~나나
+        KT 배정대 나나나 난~나나
+        KT wiz 승리를 위해  (반복 2번 후)
+        1루 2루 3루 홈 빵야~
+      `,
+    ],
   },
   {
     id: '77',
@@ -1290,6 +1501,15 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%86%A1%EB%AF%BC%EC%84%AD1.mp3',
     ],
+    lyrics: [
+      `
+        송민섭이 섭이섭이 섭~이~
+        KT wiz의~ 폭풍질주 송 민 섭~
+        송민섭이 섭이섭이 섭~이~
+        KT wiz의~ 폭풍질주 송 민 섭~
+        (리듬) ~~~~ 송민섭 (반복 4번)
+      `,
+    ],
   },
   {
     id: '78',
@@ -1308,6 +1528,20 @@ export const PlayerInfo = [
     image: batter26,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%95%88%EC%B9%98%EC%98%811.mp3',
+    ],
+    lyrics: [
+      `
+        안치영 안타 워어어어
+        케이티 승리를 위하여
+        안타를 날려버려
+        시원하게 안치영 안타!
+
+        안치영 안타 워어어어
+        케이티 승리를 위하여
+        안타를 날려버려
+        워~~~~ 워~~~~ 워~~~
+        안 치 영!
+      `,
     ],
   },
   {
@@ -1344,6 +1578,19 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%A0%95%EC%A4%80%EC%98%811.mp3',
     ],
+    lyrics: [
+      `
+        정준영 안타 정준영
+        케이티의 승리를 위하여
+        날려버려 안타 정준영
+        날려버려 정준영
+
+        정준영 안타 정준영
+        케이티의 승리를 위하여
+        날려버려 안타 정준영
+        안타 정준영
+      `,
+    ],
   },
   {
     id: '81',
@@ -1363,6 +1610,14 @@ export const PlayerInfo = [
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%A1%B0%EC%9A%A9%ED%98%B81.mp3',
     ],
+    lyrics: [
+      `
+        승리 위해 나타났다 kt 조용호
+        승리 위해 달려간다 kt 조용호
+        나나나나나나나나나나나나나~ 나나나나나나나나~ (조용호)
+        (반복 2번)
+      `,
+    ],
   },
   {
     id: '82',
@@ -1381,6 +1636,19 @@ export const PlayerInfo = [
     image: batter30,
     song: [
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%8D%ED%98%84%EB%B9%881.mp3',
+    ],
+    lyrics: [
+      `
+        안타를 쳐줘요 홍현빈
+        홈런을 쳐줘요 홍현빈
+        kt 승리를 위하여
+        kt 홍현빈 화이팅
+
+        안타를 쳐줘요 홍현빈
+        홈런을 쳐줘요 홍현빈
+        kt 승리를 위하여
+        날 려 버 려 홍 현 빈
+      `,
     ],
   },
 ];

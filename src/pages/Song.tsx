@@ -10,7 +10,9 @@ const SongPage = () => {
   ).map((player) => ({
     id: player.id,
     name: player.name,
+    image: player.image,
     song: player.song ?? [],
+    lyrics: player.lyrics ?? [],
   }));
 
   return (
