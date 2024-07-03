@@ -3,6 +3,7 @@ import ContentLayout from '../components/content/content-layout';
 import ktHeaderImg from '../assets/ktHeaderImg.png';
 import { PlayerInfo } from '../mocks/player-info';
 import SongList from '../components/song/song-list';
+import PlayerSearch from '../components/player/player-search';
 
 const SongPage = () => {
   const playerSongs = PlayerInfo.filter(
@@ -24,6 +25,7 @@ const SongPage = () => {
       />
       <main>
         <ContentLayout>
+          <PlayerSearch placeholder="선수 이름을 검색해보세요!" />
           <SongList songs={playerSongs} />
         </ContentLayout>
       </main>
