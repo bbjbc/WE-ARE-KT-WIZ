@@ -1,5 +1,5 @@
 // 코칭스텝
-import coach1 from '../assets/coach/이강철.jpg';
+// import coach1 from '../assets/coach/이강철.jpg';
 import coach2 from '../assets/coach/김태한.jpg';
 import coach3 from '../assets/coach/김태균.jpg';
 import coach4 from '../assets/coach/제춘모.jpg';
@@ -98,7 +98,8 @@ export const PlayerInfo = [
     weight: '78',
     highSchool: '광주제일고',
     university: '동국대',
-    image: coach1,
+    image:
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%B0%90%EC%97%AC%EA%B6%8C.jpg',
   },
   {
     id: '2',
@@ -850,6 +851,9 @@ export const PlayerInfo = [
     middleSchool: '부천중',
     highSchool: '유신고',
     image: batter1,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%ED%98%84%EC%9A%B01.mp3',
+    ],
   },
   {
     id: '54',
@@ -882,6 +886,10 @@ export const PlayerInfo = [
     middleSchool: '개성중',
     highSchool: '경남고',
     image: batter3,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%A4%80%ED%83%9C1.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%A4%80%ED%83%9C2.mp3',
+    ],
   },
   {
     id: '56',
@@ -898,6 +906,9 @@ export const PlayerInfo = [
     middleSchool: '경남중',
     highSchool: '경남고',
     image: batter4,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9E%A5%EC%84%B1%EC%9A%B01.mp3',
+    ],
   },
   {
     id: '57',
@@ -947,6 +958,11 @@ export const PlayerInfo = [
     middleSchool: '서울이수중',
     highSchool: '서울고',
     image: batter7,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%EB%B0%B1%ED%98%B81.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%EB%B0%B1%ED%98%B82.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B0%95%EB%B0%B1%ED%98%B83.mp3',
+    ],
   },
   {
     id: '60',
@@ -963,6 +979,9 @@ export const PlayerInfo = [
     middleSchool: '경복중',
     highSchool: '경북고',
     image: batter8,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EC%83%81%EC%88%981.mp3',
+    ],
   },
   {
     id: '61',
@@ -979,6 +998,10 @@ export const PlayerInfo = [
     middleSchool: '성남중',
     highSchool: '성남고',
     image: batter9,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EA%B2%BD%EC%88%981.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%95%EA%B2%BD%EC%88%982.mp3',
+    ],
   },
   {
     id: '62',
@@ -1011,6 +1034,9 @@ export const PlayerInfo = [
     middleSchool: '경남중',
     highSchool: '경남고',
     image: batter11,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%8B%A0%EB%B3%B8%EA%B8%B01.mp3',
+    ],
   },
   {
     id: '64',
@@ -1027,6 +1053,9 @@ export const PlayerInfo = [
     middleSchool: '자양중',
     highSchool: '경기고',
     image: batter12,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9C%A4%EC%84%9D1.mp3',
+    ],
   },
   {
     id: '65',
@@ -1042,6 +1071,10 @@ export const PlayerInfo = [
     elementarySchool: '구리인창중',
     middleSchool: '야탑고',
     image: batter13,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9E%AC%EC%9D%BC1.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%98%A4%EC%9E%AC%EC%9D%BC2.mp3',
+    ],
   },
   {
     id: '66',
@@ -1073,6 +1106,9 @@ export const PlayerInfo = [
     middleSchool: '진흥중',
     highSchool: '광주제일고',
     image: batter15,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9D%B4%ED%98%B8%EC%97%B01.mp3',
+    ],
   },
   {
     id: '68',
@@ -1088,6 +1124,9 @@ export const PlayerInfo = [
     elementarySchool: '개성중',
     middleSchool: '경남고',
     image: batter16,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%9E%A5%EC%A4%80%EC%9B%901.mp3',
+    ],
   },
   {
     id: '69',
@@ -1104,6 +1143,9 @@ export const PlayerInfo = [
     middleSchool: '충장중',
     highSchool: '진흥고',
     image: batter17,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%B2%9C%EC%84%B1%ED%98%B81.mp3',
+    ],
   },
   {
     id: '70',
@@ -1120,6 +1162,10 @@ export const PlayerInfo = [
     middleSchool: '서울이수중',
     highSchool: '경기고',
     image: batter18,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%A9%EC%9E%AC%EA%B7%A01.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%A9%EC%9E%AC%EA%B7%A02.mp3',
+    ],
   },
   // 타자 - 외야수
   {
@@ -1151,6 +1197,9 @@ export const PlayerInfo = [
     middleSchool: '배재중',
     highSchool: '배재고',
     image: batter20,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EA%B9%80%EB%AF%BC%ED%98%811.mp3',
+    ],
   },
   {
     id: '73',
@@ -1180,6 +1229,10 @@ export const PlayerInfo = [
     height: '189',
     weight: '102',
     image: batter22,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%A1%9C%ED%95%98%EC%8A%A41.mp3',
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%A1%9C%ED%95%98%EC%8A%A42.mp3',
+    ],
   },
   {
     id: '75',
@@ -1196,6 +1249,9 @@ export const PlayerInfo = [
     middleSchool: '잠신중',
     highSchool: '배명고',
     image: batter23,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%AC%B8%EC%83%81%EC%B2%A01.mp3',
+    ],
   },
   {
     id: '76',
@@ -1212,6 +1268,9 @@ export const PlayerInfo = [
     middleSchool: '성남중',
     highSchool: '성남고',
     image: batter24,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EB%B0%B0%EC%A0%95%EB%8C%801.mp3',
+    ],
   },
   {
     id: '77',
@@ -1228,6 +1287,9 @@ export const PlayerInfo = [
     middleSchool: '선린중',
     highSchool: '선린인터넷고',
     image: batter25,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%86%A1%EB%AF%BC%EC%84%AD1.mp3',
+    ],
   },
   {
     id: '78',
@@ -1244,6 +1306,9 @@ export const PlayerInfo = [
     middleSchool: '천안북중',
     highSchool: '북일고',
     image: batter26,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%95%88%EC%B9%98%EC%98%811.mp3',
+    ],
   },
   {
     id: '79',
@@ -1276,6 +1341,9 @@ export const PlayerInfo = [
     middleSchool: '강남중',
     highSchool: '장충고',
     image: batter28,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%A0%95%EC%A4%80%EC%98%811.mp3',
+    ],
   },
   {
     id: '81',
@@ -1292,6 +1360,9 @@ export const PlayerInfo = [
     middleSchool: '잠신중',
     highSchool: '야탑고',
     image: batter29,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%EC%A1%B0%EC%9A%A9%ED%98%B81.mp3',
+    ],
   },
   {
     id: '82',
@@ -1308,5 +1379,8 @@ export const PlayerInfo = [
     middleSchool: '매송중',
     highSchool: '유신고',
     image: batter30,
+    song: [
+      'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/%ED%99%8D%ED%98%84%EB%B9%881.mp3',
+    ],
   },
 ];
