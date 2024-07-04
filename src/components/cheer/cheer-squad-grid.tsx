@@ -20,7 +20,7 @@ const CheerSquadGrid = () => {
       : `당신이 검색한 응원단은 총 ${countCheerSquad}명입니다.`;
 
   return (
-    <>
+    <article className="mb-6 mt-2">
       <h2 className="mb-2 flex justify-center text-sm">
         {searchTerm
           ? searchResultMessage
@@ -33,7 +33,7 @@ const CheerSquadGrid = () => {
           </li>
         ))}
       </ul>
-    </>
+    </article>
   );
 };
 
