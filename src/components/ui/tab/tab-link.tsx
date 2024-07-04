@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom';
 
-interface TabProps {
+interface TabNavProps {
   to: string;
   label: string;
 }
 
-const Tab: React.FC<TabProps> = ({ to, label }) => {
+const TabNav: React.FC<TabNavProps> = ({ to, label }) => {
   return (
     <NavLink
       to={to}
@@ -20,4 +20,4 @@ const Tab: React.FC<TabProps> = ({ to, label }) => {
   );
 };
 
-export default Tab;
+export default TabNav;

@@ -2,7 +2,7 @@ import AccordionItem from '../ui/accordion/accordion-item';
 import AudioPlayer from '../ui/audio/audio-player';
 import { FaItunesNote } from 'react-icons/fa6';
 
-interface SongItemProps {
+interface PlayerSongItemProps {
   playerName: string;
   songUrl: string;
   index: number | string;
@@ -10,7 +10,7 @@ interface SongItemProps {
   image: string;
 }
 
-const SongItem: React.FC<SongItemProps> = ({
+const PlayerSongItem: React.FC<PlayerSongItemProps> = ({
   playerName,
   songUrl,
   index,
@@ -51,4 +51,4 @@ const SongItem: React.FC<SongItemProps> = ({
   return <AccordionItem header={header} details={details} />;
 };
 
-export default SongItem;
+export default PlayerSongItem;

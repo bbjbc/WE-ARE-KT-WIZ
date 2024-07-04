@@ -2,7 +2,7 @@ import { useAtomValue } from 'jotai';
 import { chosungIncludes } from 'es-hangul';
 
 import { searchTermAtom } from '../../utils/atoms';
-import SongItem from './song-item';
+import PlayerSongItem from './player-song-item';
 
 interface Song {
   id: string;
@@ -35,7 +35,7 @@ const SongList: React.FC<SongListProps> = ({ songs }) => {
           <ul className="flex flex-col">
             {song.song.map((songUrl, index) => (
               <li key={index} className="my-2">
-                <SongItem
+                <PlayerSongItem
                   key={`${song.id}-${index}`}
                   playerName={song.name}
                   songUrl={songUrl}
