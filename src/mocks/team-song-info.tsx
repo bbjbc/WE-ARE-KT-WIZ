@@ -676,7 +676,7 @@ export const TeamSongInfo = [
   },
   {
     id: '36',
-    name: 'lets go kt wiz',
+    name: `Let's go kt wiz`,
     songUrl:
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/lets_go_kt_wiz.mp3',
     lyrics: `
@@ -832,15 +832,15 @@ export const TeamSongInfo = [
   },
   {
     id: '44',
-    name: 'dont stop KT',
+    name: `Don't stop KT`,
     songUrl:
       'https://boongranii-we-are-kt-wiz.s3.ap-northeast-2.amazonaws.com/dont_stop.mp3',
     lyrics: `
       외쳐라~
       kt wiz 워
       하나되어 워어어어
-      DON_T STOP kt
-      DON_T STOP kt
+      Don't stop kt
+      Don't stop kt
       승리하라 kt wiz
       워우워어 kt wiz
       열광하라 kt wiz 워우워
