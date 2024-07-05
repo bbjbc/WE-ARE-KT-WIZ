@@ -17,11 +17,13 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
   const wavesurferRef = useRef<WaveSurfer | null>(null); // Wavesurfer.js 인스턴스를 저장할 참조
   const [isPlaying, setIsPlaying] = useState(false); // 현재 오디오가 재생 중인지 나타냄
   const [, setIsReady] = useState(false); // Wavesurfer.js가 오디오를 로드했는지 나타냄
+  const [isLoading, setIsLoading] = useState(false); // Wavesurfer.js가 오디오를 로드 중인지 나타냄
   const [currentAudio, setCurrentAudio] = useAtom(audioAtom);
 
   // Wavesurfer.js 인스턴스를 생성하고 오디오를 로드하는 함수
   const createWaveSurfer = () => {
     if (waveformRef.current && !wavesurferRef.current) {
+      setIsLoading(true);
       wavesurferRef.current = WaveSurfer.create({
         container: waveformRef.current,
         waveColor: '#ff4e00',
@@ -39,7 +41,10 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
 
       wavesurferRef.current.load(src); // Wavesurfer.js에 오디오를 로드
 
-      wavesurferRef.current.on('ready', () => setIsReady(true)); // Wavesurfer.js가 오디오를 로드했을 때
+      wavesurferRef.current.on('ready', () => {
+        setIsReady(true); // Wavesurfer.js가 오디오를 로드했을 때
+        setIsLoading(false);
+      });
       wavesurferRef.current.on('play', () => setIsPlaying(true)); // Wavesurfer.js가 오디오를 재생했을 때
       wavesurferRef.current.on('pause', () => setIsPlaying(false)); // Wavesurfer.js가 오디오를 일시 정지했을 때
     }
@@ -74,23 +79,25 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
     }
   };
 
+  const loadingStyle = isLoading
+    ? 'bg-gray-400 cursor-not-allowed'
+    : 'bg-blue-500 hover:bg-blue-600';
+
+  const isPlayingAudio = isPlaying ? '일시 정지' : '재생';
+  const fetchAudio = !wavesurferRef.current ? '음원 가져오기' : isPlayingAudio;
+
   return (
     <div className="mx-auto mb-4 w-full" onClick={(e) => e.stopPropagation()}>
       <div ref={waveformRef} className="mb-4" />
       <Button
         onClick={handlePlayPause}
+        disabled={isLoading}
         className={classNames(
           'w-full rounded-full text-xs text-white transition-colors',
-          isPlaying
-            ? 'bg-red-500 hover:bg-red-600'
-            : 'bg-blue-500 hover:bg-blue-600',
+          isPlaying ? 'bg-red-500 hover:bg-red-600' : loadingStyle,
         )}
       >
-        {!wavesurferRef.current
-          ? '음원 가져오기'
-          : isPlaying
-            ? '일시 정지'
-            : '재생'}
+        {isLoading ? '잠시만 기다려주세요!' : fetchAudio}
       </Button>
     </div>
   );
