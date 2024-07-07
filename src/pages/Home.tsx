@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 
-import ktRemoveBgImg from '../assets/ktLogo-removebg-preview.png';
-import ktHomeBgImg from '../assets/ktHomeBgImg.png';
 import TextType from '../components/ui/typo/text-type';
 import InfiniteSlider from '../components/ui/slider/infinite-slider';
+import Timeline from '../components/ui/timeline/timeline';
+import ktRemoveBgImg from '../assets/ktLogo-removebg-preview.png';
+import ktHomeBgImg2 from '../assets/ktHomeBgImg2.png';
 
 const HomePage = () => {
   return (
     <article
-      style={{ backgroundImage: `url(${ktHomeBgImg})` }}
-      className="flex h-screen flex-col gap-8 bg-cover bg-center py-6"
+      style={{ backgroundImage: `url(${ktHomeBgImg2})` }}
+      className="flex h-auto w-full flex-col gap-8 bg-center py-6"
     >
       <motion.img
         initial={{ opacity: 0, y: -100 }}
@@ -41,6 +42,12 @@ const HomePage = () => {
           'TOGETHER',
         ]}
       />
+
+      <div className="mx-4">
+        <h1 className="text-2xl font-extrabold text-white">우리 구단의 역사</h1>
+        <div className="mb-4 w-1/6 border-t-4 border-white"></div>
+        <Timeline />
+      </div>
     </article>
   );
 };
