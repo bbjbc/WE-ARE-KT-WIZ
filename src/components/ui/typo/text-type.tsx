@@ -56,9 +56,9 @@ const TextType: React.FC<TextTypeProps> = ({ text }) => {
 
   return (
     <div className="flex items-center justify-center">
-      <p className="h-24 whitespace-pre-line p-2 text-center font-gonggothic text-3xl text-red-800">
+      <p className="h-24 whitespace-pre-line p-2 text-center font-gonggothic text-3xl text-white">
         {sequence}
-        <span className="animate-blink ml-1 inline-block h-8 w-0.5 bg-black align-top"></span>
+        <span className="animate-blink ml-1 inline-block h-8 w-0.5 bg-white align-top"></span>
       </p>
     </div>
   );
