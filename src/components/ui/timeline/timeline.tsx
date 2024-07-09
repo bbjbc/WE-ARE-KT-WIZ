@@ -19,7 +19,7 @@ const Timeline = () => {
   }));
 
   return (
-    <div className="w-full">
+    <div className="-mx-4 w-full">
       <Chrono
         items={customItems}
         mode="VERTICAL"

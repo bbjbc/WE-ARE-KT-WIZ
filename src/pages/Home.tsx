@@ -46,8 +46,8 @@ const HomePage = () => {
       <div className="mx-4">
         <h1 className="text-2xl font-extrabold text-white">우리 구단의 역사</h1>
         <div className="mb-4 w-1/6 border-t-4 border-white"></div>
-        <Timeline />
       </div>
+      <Timeline />
     </article>
   );
 };
