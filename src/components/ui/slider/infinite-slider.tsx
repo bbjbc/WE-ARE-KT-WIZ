@@ -9,18 +9,15 @@ const InfiniteSlider: React.FC<InfiniteSliderProps> = ({
   topItems,
   bottomItems,
 }) => {
-  const expandedTopItems = [...topItems, ...topItems, ...topItems];
-  const expandedBottomItems = [...bottomItems, ...bottomItems, ...bottomItems];
-
   return (
-    <div className="relative">
+    <section className="relative">
       <div className="absolute inset-0 bg-gradient-to-r from-sky-600 to-red-600 blur-sm filter"></div>
 
       <div className="relative z-10 text-white">
-        <SliderRow items={expandedTopItems} direction="right" />
-        <SliderRow items={expandedBottomItems} direction="left" />
+        <SliderRow items={topItems} direction="right" />
+        <SliderRow items={bottomItems} direction="left" />
       </div>
-    </div>
+    </section>
   );
 };
 
