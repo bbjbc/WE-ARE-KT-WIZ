@@ -22,7 +22,13 @@ const HomePage = () => {
         alt="ktLogo"
         className="mb-2 w-full"
       />
-      <TextType text={'WE ARE GREAT MAGIC\n WINNING KT!'} />
+      <TextType
+        textArr={[
+          'WE ARE GREAT MAGIC\n WINNING KT!',
+          '마법같은 기적을 만들자\n 케이티 위즈와 함께 하자!',
+          '패기와 열정을 모아서\n V2를 향하여 정진하라!',
+        ]}
+      />
 
       <InfiniteSlider
         topItems={[
